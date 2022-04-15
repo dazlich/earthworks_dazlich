@@ -1,0 +1,31 @@
+#
+ git clone https://github.com/ESCOMP/cesm
+ cd cesm
+ git checkout cesm2_3_alpha05b
+
+# do this until CESM gets merged
+cp ../cesm.mods/cesm/Externals.cfg .
+./manage_externals/checkout_externals -v
+
+#do this until cime gets merged
+cp ../cesm.mods/cime/config_files.xml cime/config/cesm/
+cp ../cesm.mods/cime/config_grids.xml cime/config/cesm/
+
+#do this until cmeps gets merged
+cp ../cesm.mods/cmeps/config_component_cesm.xml components/cmeps/cime_config/
+cp ../cesm.mods/cmeps/fd_cesm.yaml components/cmeps/mediator/
+cp ../cesm.mods/cmeps/esmFldsExchange_cesm_mod.F90 components/cmeps/mediator/
+
+# create identical frameworks for the atmosphere and the ocean/seaice
+cp components/cam/src/dynamics/mpas/dycore/src/framework/* E3SM/components/mpas-framework/src/framework/
+sed -e 's/mpas_constants_compute_derived/dummy/' E3SM/components/mpas-framework/src/framework/mpas_constants.F > mpas_constants.F
+mv mpas_constants.F E3SM/components/mpas-framework/src/framework/mpas_constants.F
+
+#make a necessary edit to one cam files
+sed -e 's/pop,mom/pop,mom,mpaso/' components/cam/bld/config_files/definition.xml > definition.xml
+mv definition.xml components/cam/bld/config_files/definition.xml
+
+#make these files executable
+chmod a+x E3SM/components/mpas-ocean/cime_config/buildlib
+chmod a+x E3SM/components/mpas-seaice/cime_config/buildlib
+
