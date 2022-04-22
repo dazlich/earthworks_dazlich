@@ -21,7 +21,7 @@ cp ../cesm.mods/cmeps/fd_cesm.yaml components/cmeps/mediator/
 cp ../cesm.mods/cmeps/esmFldsExchange_cesm_mod.F90 components/cmeps/mediator/
 
 #this is a fix until this gets resolved
-cp ../cesm.mods/mpas-ocean/mpas_ocn_okubo_wiess.F E3SM/components/mpas-ocean/src/analysis_members/
+cp ../cesm.mods/mpas-ocean/mpas_ocn_okubo_weiss.F E3SM/components/mpas-ocean/src/analysis_members/
 
 # create identical frameworks for the atmosphere and the ocean/seaice
 cp components/cam/src/dynamics/mpas/dycore/src/framework/* E3SM/components/mpas-framework/src/framework/
