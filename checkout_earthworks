@@ -1,20 +1,27 @@
 #
  git clone https://github.com/ESCOMP/cesm
  cd cesm
- git checkout cesm2_3_alpha05b
+ git checkout cesm2_3_beta08
 
 # do this until CESM gets merged
 cp ../cesm.mods/cesm/Externals.cfg .
 ./manage_externals/checkout_externals -v
 
+# do this until ccs_config gets merged
+cp ../cesm.mods/ccs_config/component_grids_nuopc.xml ccs_config/
+cp ../cesm.mods/ccs_config/modelgrid_aliases_nuopc.xml ccs_config/
+
 #do this until cime gets merged
 cp ../cesm.mods/cime/config_files.xml cime/config/cesm/
-cp ../cesm.mods/cime/config_grids.xml cime/config/cesm/
+#cp ../cesm.mods/cime/config_grids.xml cime/config/cesm/
 
 #do this until cmeps gets merged
 cp ../cesm.mods/cmeps/config_component_cesm.xml components/cmeps/cime_config/
 cp ../cesm.mods/cmeps/fd_cesm.yaml components/cmeps/mediator/
 cp ../cesm.mods/cmeps/esmFldsExchange_cesm_mod.F90 components/cmeps/mediator/
+
+#this is a fix until this gets resolved
+cp ../cesm.mods/mpas-ocean/mpas_ocn_okubo_wiess.F E3SM/components/mpas-ocean/src/analysis_members/
 
 # create identical frameworks for the atmosphere and the ocean/seaice
 cp components/cam/src/dynamics/mpas/dycore/src/framework/* E3SM/components/mpas-framework/src/framework/
