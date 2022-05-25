@@ -1266,6 +1266,20 @@
     <mask>gx1v7</mask>
   </model_grid>
 
+  <model_grid alias="mpasa480_oQU480" not_compset="_POP">
+    <grid name="atm">mpasa480</grid>
+    <grid name="lnd">mpasa480</grid>
+    <grid name="ocnice">oQU480</grid>
+    <mask>oQU480</mask>
+  </model_grid>
+  
+  <model_grid alias="mpasa240_oQU240" not_compset="_POP">
+    <grid name="atm">mpasa240</grid>
+    <grid name="lnd">mpasa240</grid>
+    <grid name="ocnice">oQU240</grid>
+    <mask>oQU240</mask>
+  </model_grid>
+  
   <model_grid alias="mpasa120_oQU120" not_compset="_POP">
     <grid name="atm">mpasa120</grid>
     <grid name="lnd">mpasa120</grid>
