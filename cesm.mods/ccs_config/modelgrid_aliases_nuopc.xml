@@ -431,6 +431,13 @@
     <mask>gx1v7</mask>
   </model_grid>
 
+    <model_grid alias="T62_oQU240" not_compset="_CAM">
+    <grid name="atm">T62</grid>
+    <grid name="lnd">T62</grid>
+    <grid name="ocnice">oQU240</grid>
+    <mask>oQU240</mask>
+  </model_grid>
+
   <model_grid alias="T62_oQU120" not_compset="_CAM">
     <grid name="atm">T62</grid>
     <grid name="lnd">T62</grid>
