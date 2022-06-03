@@ -2741,7 +2741,7 @@ contains
        if ( fldchk(is_local%wrap%FBImp(compocn, compocn), 'Fioo_frazil', rc=rc) .and. &
             fldchk(is_local%wrap%FBExp(compice)         , 'Fioo_frazil', rc=rc)) then
           call addmap(fldListFr(compocn)%flds, 'Fioo_frazil', compice,  mapfcopy, 'unset', 'unset')
-          call addmrg(fldListTo(compice)%flds, 'Fioo_frazil', mrg_from=compocn, mrg_fld='Fioo_q', mrg_type='copy')
+          call addmrg(fldListTo(compice)%flds, 'Fioo_frazil', mrg_from=compocn, mrg_fld='Fioo_frazil', mrg_type='copy')
        end if
     end if
     !-----------------------------
