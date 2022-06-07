@@ -1322,21 +1322,21 @@
     <mask>oEC60to30v3</mask>
   </model_grid>
 
-  <model_grid alias="mpasa60_oQU060" not_compset="_POP">
+  <model_grid alias="mpasa060_oQU060" not_compset="_POP">
     <grid name="atm">mpasa60</grid>
     <grid name="lnd">mpasa60</grid>
     <grid name="ocnice">oQU060</grid>
     <mask>oQU060</mask>
   </model_grid>
 
-  <model_grid alias="mpasa30_oQU030" not_compset="_POP">
+  <model_grid alias="mpasa030_oQU030" not_compset="_POP">
     <grid name="atm">mpasa30</grid>
     <grid name="lnd">mpasa30</grid>
     <grid name="ocnice">oQU030</grid>
     <mask>oQU030</mask>
   </model_grid>
 
-  <model_grid alias="mpasa15_oQU015" not_compset="_POP">
+  <model_grid alias="mpasa015_oQU015" not_compset="_POP">
     <grid name="atm">mpasa15</grid>
     <grid name="lnd">mpasa15</grid>
     <grid name="ocnice">oQU015</grid>
