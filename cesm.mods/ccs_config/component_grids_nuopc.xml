@@ -385,6 +385,18 @@
       <desc>oQU015 is a MPAS ocean grid that is roughly 1/8 degree resolution:</desc>
       <support>Experimental, under development</support>
     </domain>
+    <domain name="oQU0075">
+      <nx>1849027</nx>  <ny>1</ny>
+      <mesh driver="nuopc">/glade/p/univ/ucsu0085/inputdata/oQU0075_ESMFmesh.nc</mesh>
+      <desc>oQU00375 is a MPAS ocean grid that is roughly 1/16 degree resolution:</desc>
+      <support>Experimental, under development</support>
+    </domain>
+    <domain name="oQU00375">
+      <nx>1849027</nx>  <ny>1</ny>
+      <mesh driver="nuopc">/glade/p/univ/ucsu0085/inputdata/oQU00375_ESMFmesh.nc</mesh>
+      <desc>oQU00375 is a MPAS ocean grid that is roughly 1/32 degree resolution:</desc>
+      <support>Experimental, under development</support>
+    </domain>
 
   <!-- ======================================================== -->
   <!-- ROF domains -->
