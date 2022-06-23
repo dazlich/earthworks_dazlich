@@ -479,6 +479,20 @@
      <grid name="ocnice">oQU015</grid>
      <mask>oQU015</mask>
    </model_grid>
+
+   <model_grid alias="T62_oQU0075" not_compset="_CAM">
+     <grid name="atm">T62</grid>
+     <grid name="lnd">T62</grid>
+     <grid name="ocnice">oQU0075</grid>
+     <mask>oQU0075</mask>
+   </model_grid>
+
+   <model_grid alias="T62_oQU00375" not_compset="_CAM">
+     <grid name="atm">T62</grid>
+     <grid name="lnd">T62</grid>
+     <grid name="ocnice">oQU00375</grid>
+     <mask>oQU00375</mask>
+   </model_grid>
   <!-- finite volume grids -->
 
   <model_grid alias="f02_g16">
@@ -1341,6 +1355,20 @@
     <grid name="lnd">mpasa15</grid>
     <grid name="ocnice">oQU015</grid>
     <mask>oQU015</mask>
+  </model_grid>
+
+  <model_grid alias="mpasa0075_oQU0075" not_compset="_POP">
+    <grid name="atm">mpasa7p5</grid>
+    <grid name="lnd">mpasa7p5</grid>
+    <grid name="ocnice">oQU0075</grid>
+    <mask>oQU0075</mask>
+  </model_grid>
+
+  <model_grid alias="mpasa00375_oQU00375" not_compset="_POP">
+    <grid name="atm">mpasa3p75</grid>
+    <grid name="lnd">mpasa3p75</grid>
+    <grid name="ocnice">oQU00375</grid>
+    <mask>oQU00375</mask>
   </model_grid>
 
   <!-- new runoff grids for data runoff model DROF -->
